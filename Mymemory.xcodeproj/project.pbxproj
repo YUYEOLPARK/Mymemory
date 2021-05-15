@@ -9,23 +9,31 @@
 /* Begin PBXBuildFile section */
 		413478022637AA8900390B6F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413478012637AA8900390B6F /* AppDelegate.swift */; };
 		413478042637AA8900390B6F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413478032637AA8900390B6F /* SceneDelegate.swift */; };
-		413478062637AA8900390B6F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413478052637AA8900390B6F /* ViewController.swift */; };
 		413478092637AA8900390B6F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 413478072637AA8900390B6F /* Main.storyboard */; };
 		4134780C2637AA8900390B6F /* Mymemory.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4134780A2637AA8900390B6F /* Mymemory.xcdatamodeld */; };
 		4134780E2637AA8B00390B6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4134780D2637AA8B00390B6F /* Assets.xcassets */; };
 		413478112637AA8B00390B6F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4134780F2637AA8B00390B6F /* LaunchScreen.storyboard */; };
+		4134783C263E2A4200390B6F /* MemoListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4134783B263E2A4200390B6F /* MemoListVC.swift */; };
+		4134783E263E2A7600390B6F /* MemoFormVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4134783D263E2A7600390B6F /* MemoFormVC.swift */; };
+		41347840263E2A9100390B6F /* MemoReadVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4134783F263E2A9100390B6F /* MemoReadVC.swift */; };
+		41347842263E2AF600390B6F /* MemoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41347841263E2AF600390B6F /* MemoCell.swift */; };
+		41347844263E2B6E00390B6F /* MemoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41347843263E2B6E00390B6F /* MemoData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		413477FE2637AA8900390B6F /* Mymemory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mymemory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		413478012637AA8900390B6F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		413478032637AA8900390B6F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		413478052637AA8900390B6F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		413478082637AA8900390B6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4134780B2637AA8900390B6F /* Mymemory.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Mymemory.xcdatamodel; sourceTree = "<group>"; };
 		4134780D2637AA8B00390B6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		413478102637AA8B00390B6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		413478122637AA8B00390B6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4134783B263E2A4200390B6F /* MemoListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoListVC.swift; sourceTree = "<group>"; };
+		4134783D263E2A7600390B6F /* MemoFormVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoFormVC.swift; sourceTree = "<group>"; };
+		4134783F263E2A9100390B6F /* MemoReadVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoReadVC.swift; sourceTree = "<group>"; };
+		41347841263E2AF600390B6F /* MemoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoCell.swift; sourceTree = "<group>"; };
+		41347843263E2B6E00390B6F /* MemoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +68,12 @@
 			children = (
 				413478012637AA8900390B6F /* AppDelegate.swift */,
 				413478032637AA8900390B6F /* SceneDelegate.swift */,
-				413478052637AA8900390B6F /* ViewController.swift */,
 				413478072637AA8900390B6F /* Main.storyboard */,
+				41347843263E2B6E00390B6F /* MemoData.swift */,
+				41347841263E2AF600390B6F /* MemoCell.swift */,
+				4134783B263E2A4200390B6F /* MemoListVC.swift */,
+				4134783D263E2A7600390B6F /* MemoFormVC.swift */,
+				4134783F263E2A9100390B6F /* MemoReadVC.swift */,
 				4134780D2637AA8B00390B6F /* Assets.xcassets */,
 				4134780F2637AA8B00390B6F /* LaunchScreen.storyboard */,
 				413478122637AA8B00390B6F /* Info.plist */,
@@ -141,9 +153,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41347842263E2AF600390B6F /* MemoCell.swift in Sources */,
+				41347844263E2B6E00390B6F /* MemoData.swift in Sources */,
 				4134780C2637AA8900390B6F /* Mymemory.xcdatamodeld in Sources */,
-				413478062637AA8900390B6F /* ViewController.swift in Sources */,
+				4134783E263E2A7600390B6F /* MemoFormVC.swift in Sources */,
+				41347840263E2A9100390B6F /* MemoReadVC.swift in Sources */,
 				413478022637AA8900390B6F /* AppDelegate.swift in Sources */,
+				4134783C263E2A4200390B6F /* MemoListVC.swift in Sources */,
 				413478042637AA8900390B6F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,6 +305,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 56RP69MFU8;
 				INFOPLIST_FILE = Mymemory/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -297,7 +314,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.rubypaper.Mymemory;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -306,6 +323,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 56RP69MFU8;
 				INFOPLIST_FILE = Mymemory/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -314,7 +332,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.rubypaper.Mymemory;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
