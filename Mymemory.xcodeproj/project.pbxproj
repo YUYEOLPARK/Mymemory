@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		367BB828265F1737007BE7CE /* CGLogButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367BB827265F1737007BE7CE /* CGLogButton.swift */; };
+		367BB82D265F189E007BE7CE /* warning-icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 367BB82A265F189E007BE7CE /* warning-icon-60@2x.png */; };
+		367BB82E265F189E007BE7CE /* memo-background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 367BB82B265F189E007BE7CE /* memo-background@2x.png */; };
+		367BB82F265F189E007BE7CE /* button-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 367BB82C265F189E007BE7CE /* button-bg.png */; };
 		413478022637AA8900390B6F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413478012637AA8900390B6F /* AppDelegate.swift */; };
 		413478042637AA8900390B6F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413478032637AA8900390B6F /* SceneDelegate.swift */; };
 		413478092637AA8900390B6F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 413478072637AA8900390B6F /* Main.storyboard */; };
@@ -21,6 +25,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		367BB827265F1737007BE7CE /* CGLogButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGLogButton.swift; sourceTree = "<group>"; };
+		367BB82A265F189E007BE7CE /* warning-icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "warning-icon-60@2x.png"; sourceTree = "<group>"; };
+		367BB82B265F189E007BE7CE /* memo-background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "memo-background@2x.png"; sourceTree = "<group>"; };
+		367BB82C265F189E007BE7CE /* button-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-bg.png"; sourceTree = "<group>"; };
 		413477FE2637AA8900390B6F /* Mymemory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mymemory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		413478012637AA8900390B6F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		413478032637AA8900390B6F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,9 +55,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		367BB829265F189E007BE7CE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				367BB82A265F189E007BE7CE /* warning-icon-60@2x.png */,
+				367BB82B265F189E007BE7CE /* memo-background@2x.png */,
+				367BB82C265F189E007BE7CE /* button-bg.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		413477F52637AA8900390B6F = {
 			isa = PBXGroup;
 			children = (
+				367BB829265F189E007BE7CE /* Resources */,
 				413478002637AA8900390B6F /* Mymemory */,
 				413477FF2637AA8900390B6F /* Products */,
 			);
@@ -68,6 +87,7 @@
 			children = (
 				413478012637AA8900390B6F /* AppDelegate.swift */,
 				413478032637AA8900390B6F /* SceneDelegate.swift */,
+				367BB827265F1737007BE7CE /* CGLogButton.swift */,
 				413478072637AA8900390B6F /* Main.storyboard */,
 				41347843263E2B6E00390B6F /* MemoData.swift */,
 				41347841263E2AF600390B6F /* MemoCell.swift */,
@@ -140,8 +160,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				367BB82E265F189E007BE7CE /* memo-background@2x.png in Resources */,
 				413478112637AA8B00390B6F /* LaunchScreen.storyboard in Resources */,
 				4134780E2637AA8B00390B6F /* Assets.xcassets in Resources */,
+				367BB82D265F189E007BE7CE /* warning-icon-60@2x.png in Resources */,
+				367BB82F265F189E007BE7CE /* button-bg.png in Resources */,
 				413478092637AA8900390B6F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -159,6 +182,7 @@
 				4134783E263E2A7600390B6F /* MemoFormVC.swift in Sources */,
 				41347840263E2A9100390B6F /* MemoReadVC.swift in Sources */,
 				413478022637AA8900390B6F /* AppDelegate.swift in Sources */,
+				367BB828265F1737007BE7CE /* CGLogButton.swift in Sources */,
 				4134783C263E2A4200390B6F /* MemoListVC.swift in Sources */,
 				413478042637AA8900390B6F /* SceneDelegate.swift in Sources */,
 			);
