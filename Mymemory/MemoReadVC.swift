@@ -29,11 +29,20 @@ class MemoReadVC: UIViewController {
         formatter.dateFormat = "dd일 HH:mm분에 작성됨"
         let dateString = formatter.string(from: (param?.regdate)!)
         
+        if self.img.contentClippingRect.width <= self.img.frame.width {
+            let padding = self.img.frame.width - self.img.contentClippingRect.width
+            self.img.frame.size.width = self.img.contentClippingRect.width + padding
+        } else {
+            self.img.frame.size.width = self.img.contentClippingRect.height
+        }
+        
         self.navigationItem.title = dateString
+
     }
     
 }
 
+// MARK:- ImageView image크기에 맞게 리사이징관련 값 추가.
 extension UIImageView {
     var contentClippingRect: CGRect {
         guard let image = image else { return bounds }
