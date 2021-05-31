@@ -33,6 +33,7 @@
 		415609F82664BBAF004370B2 /* icon06.png in Resources */ = {isa = PBXBuildFile; fileRef = 415609F02664BBAF004370B2 /* icon06.png */; };
 		415609FA2664C738004370B2 /* SideBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415609F92664C738004370B2 /* SideBarVC.swift */; };
 		415609FC2664CDAB004370B2 /* account@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 415609FB2664CDAB004370B2 /* account@2x.jpg */; };
+		415609FE2664D5E3004370B2 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415609FD2664D5E3004370B2 /* ProfileVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +67,7 @@
 		415609F02664BBAF004370B2 /* icon06.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon06.png; sourceTree = "<group>"; };
 		415609F92664C738004370B2 /* SideBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBarVC.swift; sourceTree = "<group>"; };
 		415609FB2664CDAB004370B2 /* account@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "account@2x.jpg"; sourceTree = "<group>"; };
+		415609FD2664D5E3004370B2 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,11 +126,12 @@
 				415609E82664BA8B004370B2 /* Bridging-Header.h */,
 				413478012637AA8900390B6F /* AppDelegate.swift */,
 				413478032637AA8900390B6F /* SceneDelegate.swift */,
-				415609F92664C738004370B2 /* SideBarVC.swift */,
 				367BB827265F1737007BE7CE /* CGLogButton.swift */,
 				41347843263E2B6E00390B6F /* MemoData.swift */,
 				41347841263E2AF600390B6F /* MemoCell.swift */,
 				4134783B263E2A4200390B6F /* MemoListVC.swift */,
+				415609F92664C738004370B2 /* SideBarVC.swift */,
+				415609FD2664D5E3004370B2 /* ProfileVC.swift */,
 				4134783D263E2A7600390B6F /* MemoFormVC.swift */,
 				4134783F263E2A9100390B6F /* MemoReadVC.swift */,
 				4134780D2637AA8B00390B6F /* Assets.xcassets */,
@@ -223,6 +226,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				415609FE2664D5E3004370B2 /* ProfileVC.swift in Sources */,
 				41347842263E2AF600390B6F /* MemoCell.swift in Sources */,
 				41347844263E2B6E00390B6F /* MemoData.swift in Sources */,
 				4134780C2637AA8900390B6F /* Mymemory.xcdatamodeld in Sources */,
