@@ -34,6 +34,11 @@
 		415609FA2664C738004370B2 /* SideBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415609F92664C738004370B2 /* SideBarVC.swift */; };
 		415609FC2664CDAB004370B2 /* account@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 415609FB2664CDAB004370B2 /* account@2x.jpg */; };
 		415609FE2664D5E3004370B2 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415609FD2664D5E3004370B2 /* ProfileVC.swift */; };
+		416D505B2668B17000DAD774 /* UserInfoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416D505A2668B17000DAD774 /* UserInfoManager.swift */; };
+		416D505D266A129700DAD774 /* Tutorial.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 416D505C266A129700DAD774 /* Tutorial.storyboard */; };
+		416D505F266A16C200DAD774 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416D505E266A16C200DAD774 /* Utils.swift */; };
+		416D5061266A180D00DAD774 /* TutorialContentsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416D5060266A180D00DAD774 /* TutorialContentsVC.swift */; };
+		416D5064266A1A2700DAD774 /* TutorialMasterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416D5063266A1A2700DAD774 /* TutorialMasterVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +73,11 @@
 		415609F92664C738004370B2 /* SideBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBarVC.swift; sourceTree = "<group>"; };
 		415609FB2664CDAB004370B2 /* account@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "account@2x.jpg"; sourceTree = "<group>"; };
 		415609FD2664D5E3004370B2 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		416D505A2668B17000DAD774 /* UserInfoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoManager.swift; sourceTree = "<group>"; };
+		416D505C266A129700DAD774 /* Tutorial.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tutorial.storyboard; sourceTree = "<group>"; };
+		416D505E266A16C200DAD774 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		416D5060266A180D00DAD774 /* TutorialContentsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialContentsVC.swift; sourceTree = "<group>"; };
+		416D5063266A1A2700DAD774 /* TutorialMasterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialMasterVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,14 +130,18 @@
 		413478002637AA8900390B6F /* Mymemory */ = {
 			isa = PBXGroup;
 			children = (
+				416D5062266A183100DAD774 /* Tutorial */,
+				416D505C266A129700DAD774 /* Tutorial.storyboard */,
 				413478072637AA8900390B6F /* Main.storyboard */,
 				415609E52664B9E9004370B2 /* SWRevealViewController.h */,
+				416D505E266A16C200DAD774 /* Utils.swift */,
 				415609E62664B9E9004370B2 /* SWRevealViewController.m */,
 				415609E82664BA8B004370B2 /* Bridging-Header.h */,
 				413478012637AA8900390B6F /* AppDelegate.swift */,
 				413478032637AA8900390B6F /* SceneDelegate.swift */,
 				367BB827265F1737007BE7CE /* CGLogButton.swift */,
 				41347843263E2B6E00390B6F /* MemoData.swift */,
+				416D505A2668B17000DAD774 /* UserInfoManager.swift */,
 				41347841263E2AF600390B6F /* MemoCell.swift */,
 				4134783B263E2A4200390B6F /* MemoListVC.swift */,
 				415609F92664C738004370B2 /* SideBarVC.swift */,
@@ -140,6 +154,15 @@
 				4134780A2637AA8900390B6F /* Mymemory.xcdatamodeld */,
 			);
 			path = Mymemory;
+			sourceTree = "<group>";
+		};
+		416D5062266A183100DAD774 /* Tutorial */ = {
+			isa = PBXGroup;
+			children = (
+				416D5060266A180D00DAD774 /* TutorialContentsVC.swift */,
+				416D5063266A1A2700DAD774 /* TutorialMasterVC.swift */,
+			);
+			path = Tutorial;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,6 +238,7 @@
 				415609F12664BBAF004370B2 /* icon01.png in Resources */,
 				415609FC2664CDAB004370B2 /* account@2x.jpg in Resources */,
 				367BB82F265F189E007BE7CE /* button-bg.png in Resources */,
+				416D505D266A129700DAD774 /* Tutorial.storyboard in Resources */,
 				413478092637AA8900390B6F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -229,14 +253,18 @@
 				415609FE2664D5E3004370B2 /* ProfileVC.swift in Sources */,
 				41347842263E2AF600390B6F /* MemoCell.swift in Sources */,
 				41347844263E2B6E00390B6F /* MemoData.swift in Sources */,
+				416D505F266A16C200DAD774 /* Utils.swift in Sources */,
 				4134780C2637AA8900390B6F /* Mymemory.xcdatamodeld in Sources */,
 				4134783E263E2A7600390B6F /* MemoFormVC.swift in Sources */,
 				41347840263E2A9100390B6F /* MemoReadVC.swift in Sources */,
 				413478022637AA8900390B6F /* AppDelegate.swift in Sources */,
 				367BB828265F1737007BE7CE /* CGLogButton.swift in Sources */,
 				415609E72664B9E9004370B2 /* SWRevealViewController.m in Sources */,
+				416D5064266A1A2700DAD774 /* TutorialMasterVC.swift in Sources */,
 				415609FA2664C738004370B2 /* SideBarVC.swift in Sources */,
 				4134783C263E2A4200390B6F /* MemoListVC.swift in Sources */,
+				416D505B2668B17000DAD774 /* UserInfoManager.swift in Sources */,
+				416D5061266A180D00DAD774 /* TutorialContentsVC.swift in Sources */,
 				413478042637AA8900390B6F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

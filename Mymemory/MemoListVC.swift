@@ -33,6 +33,16 @@ class MemoListVC: UITableViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        
+        //튜토리얼의 최초 확인(프로퍼티 리스트)하여 튜토리얼을 노출한다.
+        //viewDidLoad는 뷰가 메모리만 로드된 상태이기 때문에 뷰 전환을 할 수 없다.
+        let ud = UserDefaults.standard
+        if ud.bool(forKey: UserInfoKey.tutorial ) == false {
+            let vc = self.instanceTutorialVC(name: "MasterVC")
+            vc?.modalPresentationStyle = .fullScreen
+            self.present(vc!, animated: false, completion: nil)
+            return
+        }
         //테이블 데이터를 다시 읽어들인다. 이에 따라 행을 구성하는 로직이 실행된다.
         self.tableView.reloadData()
     }
