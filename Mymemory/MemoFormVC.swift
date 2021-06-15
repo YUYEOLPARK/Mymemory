@@ -14,6 +14,8 @@ class MemoFormVC: UIViewController {
     @IBOutlet weak var contents: UITextView!
     @IBOutlet weak var preview: UIImageView!
     
+    lazy var dao = MemoDAO()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.contents.delegate = self //텍스트뷰 위임
@@ -64,8 +66,12 @@ class MemoFormVC: UIViewController {
         data.regdate = Date()
         
         // 앱 델리게이트 객체를 읽어온 다음, memolist 배열에 MemoData 객체를 추가한다.
-        let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        appDelegate.memolist.append(data)
+        // 로직 흐름상 배열에 추가할 필요없음, memolist 배열이 코어데이터에서 가져오므로.
+        //let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        //appDelegate.memolist.append(data)
+        
+        // 코어 데이터에 메모 데이터를 추가한다.
+        self.dao.insert(data)
         
         // 작성폼 화면을 종료하고, 이전 화면으로 되돌아간다.
         _ = self.navigationController?.popViewController(animated: true)
