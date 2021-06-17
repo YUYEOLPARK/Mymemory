@@ -330,14 +330,101 @@
                     <view key="view" contentMode="scaleToFill" id="cat-K1-vgj">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="8ST-wN-7k6">
+                                <rect key="frame" x="188.66666666666666" y="349.66666666666669" width="37" height="37"/>
+                                <color key="color" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="3z2-Ng-JsM"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="8ST-wN-7k6" firstAttribute="centerX" secondItem="cat-K1-vgj" secondAttribute="centerX" id="GxL-Rj-gJU"/>
+                            <constraint firstItem="8ST-wN-7k6" firstAttribute="centerY" secondItem="cat-K1-vgj" secondAttribute="centerY" id="K4r-9O-tQi"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="QFd-3K-iUM"/>
+                    <navigationItem key="navigationItem" id="QFd-3K-iUM">
+                        <barButtonItem key="rightBarButtonItem" title="새 계정" id="5RW-69-WLZ">
+                            <connections>
+                                <segue destination="qhT-fl-Moh" kind="show" id="4RF-OG-x3z"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="indicatorView" destination="8ST-wN-7k6" id="gwB-Pk-3ZY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CHJ-vN-pDe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1000" y="1374"/>
+        </scene>
+        <!--신규 계정 등록-->
+        <scene sceneID="Ts2-5X-dgF">
+            <objects>
+                <viewController id="qhT-fl-Moh" customClass="JoinVC" customModule="Mymemory" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="czV-Il-rQn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="account" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="unU-cJ-6oD">
+                                <rect key="frame" x="10" y="60" width="90" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="1E0-WD-gZx"/>
+                                    <constraint firstAttribute="width" constant="90" id="Q9e-6Z-hDD"/>
+                                </constraints>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="H72-7E-3up">
+                                <rect key="frame" x="110" y="60" width="294" height="150"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="6jm-iZ-lFG"/>
+                                </constraints>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="24V-PF-qsF">
+                                        <rect key="frame" x="0.0" y="24.333333969116211" width="294" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="24V-PF-qsF" id="o3e-JK-6nL">
+                                            <rect key="frame" x="0.0" y="0.0" width="294" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="sS1-Aa-4cV">
+                                <rect key="frame" x="188.66666666666666" y="349.66666666666669" width="37" height="37"/>
+                                <color key="color" systemColor="systemGray2Color"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="cNl-z8-60K"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cNl-z8-60K" firstAttribute="trailing" secondItem="H72-7E-3up" secondAttribute="trailing" constant="10" id="6BT-oU-knO"/>
+                            <constraint firstItem="unU-cJ-6oD" firstAttribute="leading" secondItem="cNl-z8-60K" secondAttribute="leading" constant="10" id="U8l-BW-LMN"/>
+                            <constraint firstItem="sS1-Aa-4cV" firstAttribute="centerX" secondItem="czV-Il-rQn" secondAttribute="centerX" id="ZHt-iO-d65"/>
+                            <constraint firstItem="sS1-Aa-4cV" firstAttribute="centerY" secondItem="czV-Il-rQn" secondAttribute="centerY" id="d5J-ba-D8Q"/>
+                            <constraint firstItem="H72-7E-3up" firstAttribute="top" secondItem="cNl-z8-60K" secondAttribute="top" constant="16" id="hUI-py-ObP"/>
+                            <constraint firstItem="unU-cJ-6oD" firstAttribute="top" secondItem="cNl-z8-60K" secondAttribute="top" constant="16" id="o4h-Ml-Cbw"/>
+                            <constraint firstItem="H72-7E-3up" firstAttribute="leading" secondItem="unU-cJ-6oD" secondAttribute="trailing" constant="10" id="tvU-3j-e9g"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="신규 계정 등록" id="fU9-Zd-lxi">
+                        <barButtonItem key="rightBarButtonItem" title="Done" id="ckV-0b-I7B">
+                            <connections>
+                                <action selector="submit:" destination="qhT-fl-Moh" id="QUt-t1-cwC"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="indicatorView" destination="sS1-Aa-4cV" id="ZMp-yp-fFK"/>
+                        <outlet property="profile" destination="unU-cJ-6oD" id="Sfv-v3-5fc"/>
+                        <outlet property="tableView" destination="H72-7E-3up" id="5JO-GW-WRU"/>
+                        <segue destination="vHl-Ct-80A" kind="unwind" identifier="backProfileVC" unwindAction="backProfileVC:" id="q5a-lS-ZAu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7am-jB-9JG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="vHl-Ct-80A" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1765" y="1374"/>
         </scene>
         <!--Reveal View Controller-->
         <scene sceneID="d6u-qz-50I">
@@ -394,6 +481,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="account" width="90" height="90"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
@@ -405,6 +493,9 @@
         </systemColor>
         <systemColor name="systemBlueColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

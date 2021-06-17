@@ -24,7 +24,7 @@ class MemoDAO {
         //1-1. 최신 글 순으로 정렬하도록 정렬객체 생성
         let regdateDesc = NSSortDescriptor(key: "regdate", ascending: false)
         fetchRequest.sortDescriptors = [regdateDesc]
-        
+    
         //1-2. 검색 키워드가 있을 경우 검색 조건 추가.
         if let t = text , t.isEmpty == false {
             fetchRequest.predicate = NSPredicate(format: "contents CONTAINS[c] %@", t)
